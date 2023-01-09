@@ -1,0 +1,36 @@
+.scroll-down {
+    position: absolute;
+    bottom: -8.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    display: block;
+    font-size: var(--h3-font-size);
+}
+
+.scroll-down--left {
+    left: -70px;
+    right: auto;
+}
+
+.scroll-down span {
+    display: inline-block;
+    animation: scroll 0.5s linear infinite alternate-reverse;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-7px);
+    }
+
+    100% {
+        transform: translateX(7px);
+    }
+}
+
+.scroll-down .bx {
+    transform: rotate(270deg);
+    margin-left: 10px;
+}

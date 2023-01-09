@@ -1,0 +1,184 @@
+.skills-bar-container {
+	position: relative;
+	width: 35%;
+	min-width: 400px;
+	list-style: none;
+}
+
+.skills-bar-container li {
+	background: #555;
+	position: relative;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 30px;
+}
+
+.skills-bar-container label {
+	color: var(--title-color);
+	position: relative;
+	margin-bottom: 50px;
+	font-size: var(--h2-font-size);
+	font-weight: var(--font-medium);
+}
+
+.skills-bar-container .percent {
+	color: var(--body-color);
+	font-size: var(--h1-font-size);
+	float: right;
+}
+
+.progressbar {
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+#progress-html {
+	-webkit-animation-name: progress-html;
+	animation-name: progress-html;
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s;
+}
+
+#progress-css {
+	-webkit-animation-name: progress-css;
+	animation-name: progress-css;
+	-webkit-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+}
+
+#progress-javascript {
+	-webkit-animation-name: progress-javascript;
+	animation-name: progress-javascript;
+	-webkit-animation-delay: 2.1s;
+	animation-delay: 2.1s;
+}
+
+#progress-angular {
+	-webkit-animation-name: progress-angular;
+	animation-name: progress-angular;
+	-webkit-animation-delay: 2.8s;
+	animation-delay: 2.8s;
+}
+
+.progresspink {
+	background-color: var(--container-pink);
+}
+
+.progresslime {
+	background-color: var(--container-lime);
+}
+
+@-webkit-keyframes progress-html {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+@-webkit-keyframes progress-css {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+@-webkit-keyframes progress-javascript {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
+}
+
+@-webkit-keyframes progress-angular {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 65%;
+	}
+}
+
+@-moz-keyframes progress-html {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
+}
+
+@-moz-keyframes progress-css {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+@-moz-keyframes progress-javascript {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
+}
+
+@-moz-keyframes progress-angular {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 65%;
+	}
+}
+
+@keyframes progress-html {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
+@keyframes progress-css {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 84%;
+	}
+}
+
+@keyframes progress-javascript {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
+}
+
+@keyframes progress-angular {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 65%;
+	}
+}

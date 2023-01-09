@@ -1,0 +1,349 @@
+body {
+    font-family: var(--body-font);
+    background: var(--body-color);
+    color: var(--title-color);
+    overflow-x: hidden;
+}
+
+.app {
+    background: var(--body-color);
+    display: flex;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    flex: 1 1 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--sidebar-color);
+    max-width: 220px;
+    width: 300px;
+    height: 100vh;
+    padding: 12rem 1.5rem;
+    z-index: var(--z-100);
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li .navitem {
+    color: var(--title-color);
+    display: inline-block;
+    margin: 20px 0 0;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+.sidebar ul li .navitem {
+    font-size: var(--h1-font-size);
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li .navitem:hover {
+    color: var(--title-color-alt);
+}
+
+.sidebar ul li .navitem span {
+    margin-left: 10px;
+    font-weight: var(--font-small);
+    font-size: var(--normal-font-size);
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 99px;
+    z-index: var(--z-100);
+    background-color: var(--sidebar-color);
+    cursor: pointer;
+}
+
+.hamburger input[type="checkbox"] {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    display: block;
+    z-index: var(--z-10);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburgerlines {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburgerlines .lines {
+    display: block;
+    height: 4px;
+    width: 80%;
+    background: var(--title-color);
+}
+
+.section-home {
+    color: var(--title-color);
+    min-height: 100vh;
+    align-items: center;
+    padding-left: 20rem;
+}
+
+.text-zone {
+    position: relative;
+    top: 15em;
+    margin-bottom: 30em;
+}
+
+.text-zone h1 {
+    position: relative;
+    top: -0.5em;
+    font-size: var(--two5-font-size);
+    line-height: 65px;
+    font-weight: var(--font-semi-bold);
+}
+
+.oshawdow {
+    color: var(--container-pink);
+    font-weight: var(--font-semi-bold);
+    text-shadow: 1px 1px 0 var(--container-pink), -1px -1px 0 var(--container-lime), 1px -1px 0 var(--title-color), -1px 1px 0 var(--title-color), 1px 1px 0 var(--container-lime);
+}
+
+.text-zone b a {
+    letter-spacing: -0.1px;
+    color: var(--body-color);
+    text-decoration: none;
+    font-weight: var(--font-semi-bold);
+    text-shadow: 1px 1px 0 var(--title-color), -1px -1px 0 var(--title-color), 1px -1px 0 var(--title-color), -1px 1px 0 var(--title-color), 1px 1px 0 var(--title-color);
+    transition: 0.5s;
+}
+
+.text-zone b a:hover {
+    color: var(--container-pink);
+}
+
+.text-zone .gray-text {
+    position: relative;
+    top: -2em;
+    margin-top: 30px;
+    color: var(--title-color-alt);
+    letter-spacing: 1px;
+    font-size: var(--h3-font-size);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    transition: 0.5s;
+}
+
+.container .content {
+    position: relative;
+    max-width: 750px;
+}
+
+@media (max-width: 1000px) {
+    .container .content {
+        position: relative;
+        max-width: 700px;
+    }
+}
+@media (max-width: 550px) {
+    .container .content {
+        position: relative;
+        max-width: 450px;
+    }
+}
+
+.container .content h2 {
+    display: flex;
+    font-weight: var(--font-medium);
+    font-size: var(--two5-font-size);
+    color: var(--container-lime);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.fake-big-1 {
+    font-size: 7rem;
+    font-weight: var(--font-medium);
+    position: absolute;
+    color: #575757;
+    opacity: 20%;
+    z-index: -1;
+    letter-spacing: -10px;
+}
+
+.container .content p {
+    font-weight: var(--font-small);
+    font-size: var(--h3-font-size);
+    line-height: 1.7rem;
+    letter-spacing: 0.1px;
+}
+
+.portfolio_link {
+    color: var(--container-lime);
+}
+
+ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul.skills-list li {
+    position: relative;
+    margin-bottom: 6px;
+    padding-left: 20px;
+    font-size: var(--fz-xs);
+}
+
+ul.skills-list li:before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--container-lime);
+    font-size: var(--h3-font-size);
+    line-height: 20px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 4em;
+}
+
+.footer a {
+    color: var(--title-color-alt);
+    text-decoration: none;
+}
+
+.footer a div:hover {
+    color: var(--container-lime);
+    text-decoration: underline;
+}
+
+.social-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.social-links ul li a {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.social-links ul li a:hover {
+    color: var(--container-pink);
+}
+
+.social-links ul li a span {
+    margin-left: 5px;
+    font-weight: var(--font-small);
+    font-size: var(--normal-font-size);
+    display: flex;
+    align-items: center;
+}
+
+.blast-root:after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 30px;
+    width: 200px;
+    height: 1px;
+    margin-left: 10px;
+    background-color: #575757;
+    opacity: 40%;
+}
+
+/* Text Bounce animation */
+.blast {
+    animation-duration: 1s;
+    animation-iteration-count: once;
+    animation-timing-function: ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.blast:hover {
+    animation-name: bounceScale;
+}
+
+@keyframes bounceScale {
+    0% {
+        transform: scale(1.2, 0.5);
+    }
+
+    16% {
+        transform: scale(1.2, 0.5);
+    }
+
+    25% {
+        transform: scale(1.2, 0.5);
+    }
+
+    32% {
+        transform: scale(0.8, 1.1);
+    }
+
+    48% {
+        transform: scale(0.95, 1);
+    }
+
+    64% {
+        transform: scale(0.8, 1.2);
+    }
+
+    80% {
+        transform: scale(1.15, 1);
+    }
+
+    87% {
+        transform: scale(1.15, 1);
+    }
+
+    90% {
+        transform: scale(0.8, 1);
+    }
+
+    95% {
+        transform: scale(1.05, 1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}

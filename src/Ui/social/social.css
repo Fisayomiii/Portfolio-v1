@@ -1,0 +1,46 @@
+.hOvuuP {
+	width: 20px;
+	position: fixed;
+	bottom: 10px;
+	right: 50px;
+	z-index: var(--z-10);
+	color: #575757;
+}
+
+.dVLQAC {
+	display: flex;
+	flex-direction: column;
+	-webkit-box-align: center;
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.dVLQAC li {
+	display: list-item;
+}
+
+.dVLQAC li a {
+	padding: 10px;
+	color: var(--title-color);
+	font-size: var(--two-font-size);
+	display: flex;
+	align-items: center;
+	transition: 0.3s all;
+	text-decoration: none;
+}
+
+.dVLQAC li a:hover {
+	color: var(--container-lime);
+	transform: translateY(-3px);
+}
+
+.dVLQAC::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 90px;
+	margin: 0px auto;
+	background-color: #575757;
+}
