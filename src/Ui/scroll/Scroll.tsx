@@ -4,7 +4,7 @@ const ScrollDrown = () => {
     return (
         <>
             <div className="scroll-down scroll-down--left">
-                <span>scroll down</span>
+                <span>scroll downwards</span>
                 <i className="bx bx-chevrons-down"></i>
             </div>
         </>

@@ -1,8 +1,7 @@
 function Skills() {
+    const skills = ['TypeScript', 'React', 'Angular', 'HTML', 'CSS', 'Vite'];
 
-    const skills = ['JavaScript ', 'TypeScript', 'React', 'Angular', 'HTML', 'CSS', 'Vite'];
-
-    const devtools = ['Bootstrap ', 'Tailwind', 'Github', 'Codepen', 'Terminal', 'Vercel'];
+    const devtools = ['Bootstrap ', 'Tailwind', 'Github', 'Codepen', 'Terminal', 'Vercel', 'Netlify'];
 
     return (
         <>
@@ -44,4 +43,4 @@ function Skills() {
     )
 }
 
-export default Skills;
+export default Skills

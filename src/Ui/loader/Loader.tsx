@@ -3,7 +3,6 @@ import '../loader/loader.css';
 const Loader = () => {
   return (
     <>
-      <div className="big">
         <div className="loader-wrapper">
           <div className="inner">
             <span>Fisayomi Thinks...</span><br />
@@ -12,8 +11,6 @@ const Loader = () => {
             </div>
           </div>
         </div>
-      </div>
-
     </>
   )
 }

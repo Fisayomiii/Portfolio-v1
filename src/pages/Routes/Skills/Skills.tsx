@@ -1,3 +1,4 @@
+import Footer from "../../../components/Footer/Footer";
 import Sidebar from "../../../components/Sidebar/Sidebar";
 import Animation from "../../../Ui/skills-Animation/Animation";
 
@@ -6,7 +7,7 @@ function Skills() {
     <>
       <div className="app">
         <Sidebar />
-        <main className="section-home">
+        <main className="main"><br /><br /><br /><br /><br /><br />
           <div className="container">
             <div className="content">
               <h2 aria-label="About me" className="blast-root">
@@ -32,6 +33,8 @@ function Skills() {
               <Animation />
             </div>
           </div>
+          <Footer/>
+
         </main>
       </div>
     </>

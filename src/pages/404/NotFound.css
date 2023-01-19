@@ -1,50 +1,30 @@
 .cover {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-}
-
-.container {
-    display: flex;
     gap: 1.6rem;
     justify-content: center;
     align-items: center;
+    min-height: 70vh;
 }
 
 .container h3 {
     color: var(--title-color);
     font-size: var(--biggest-font-size);
 }
-
-.container h3::before {
-    content: '';
-    position: absolute;
-    margin-left: 6rem;
-    height: 3rem;
-    width: 0.1rem;
-    background: var(--light-gray);
-}
-
 .infoandcalltoaction {
     margin-top: -0.4em;
     line-height: 2em;
 }
 
-.infoandcalltoaction span{
+.infoandcalltoaction span {
     font-size: var(--h3-font-size);
     color: var(--container-pink);
 }
 
-.infoandcalltoaction p a{
+.infoandcalltoaction p a {
     color: var(--title-color);
     text-decoration: none;
 }
-.infoandcalltoaction p a:hover{
+
+.infoandcalltoaction p a:hover {
     text-decoration: underline;
-}
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

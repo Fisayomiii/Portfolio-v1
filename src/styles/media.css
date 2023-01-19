@@ -87,8 +87,9 @@
 }
 
 @media(max-width:950px) {
-    .section-home {
-        padding-left: 0.6rem;
+    .main {
+        position: relative;
+        left: 1rem;
     }
 
     .text-zone h1 {
@@ -104,6 +105,20 @@
         line-height: 65px;
         letter-spacing: -3px;
         position: relative;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container .content {
+        position: relative;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container .content {
+        position: relative;
+        max-width: 450px;
     }
 }
 

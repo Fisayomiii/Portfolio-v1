@@ -1,4 +1,5 @@
 import ContactMe from "../../../components/Contact/Contact";
+import Footer from "../../../components/Footer/Footer";
 import Sidebar from "../../../components/Sidebar/Sidebar";
 
 function Contact() {
@@ -6,8 +7,9 @@ function Contact() {
         <>
             <div className="app">
                 <Sidebar />
-                <main className="section-home">
+                <main className="main">
                     <ContactMe />
+                    <Footer />
                 </main>
             </div>
         </>

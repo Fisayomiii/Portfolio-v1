@@ -1,3 +1,4 @@
+import Footer from "../../../components/Footer/Footer";
 import Project from "../../../components/Portfolio/Portfolio";
 import Sidebar from "../../../components/Sidebar/Sidebar";
 
@@ -6,8 +7,9 @@ function Projects() {
         <>
             <div className="app">
                 <Sidebar />
-                <main className="section-home">
-                    <Project /><br /><br />
+                <main className="main">
+                    <br /><br /><br /><br /><br /><br /><Project />
+                    <Footer/>
                 </main>
             </div>
         </>
