@@ -1,4 +1,5 @@
 .fake-magicwall {
+    background-color: var(--project-background-color);
     margin-top: -8em;
     margin-bottom: 11em;
 }
@@ -12,8 +13,8 @@
 }
 
 .fake-magicwall ul li {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 170px;
     position: relative;
     overflow: hidden;
     display: list-item;
@@ -32,13 +33,10 @@
 .fake-magicwall img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center center;
     object-fit: cover;
-    transition: transform 0.5s ease;
 }
 
-.fake-magicwall ul li:hover .magic-wall_item {
+.fake-magicwall ul li:hover .magic-wall_item img {
     transform: scale(1.14);
     -ms-transform: scale(1.4);
     -webkit-transform: scale(1.14);
@@ -81,23 +79,4 @@
 
 .tag:hover {
     text-decoration: underline;
-}
-
-@media screen and (max-width: 622px) {
-    .fake-magicwall ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .fake-magicwall ul li {
-        width: 200px;
-        height: 200px;
-        position: relative;
-        overflow: hidden;
-        display: list-item;
-    }
 }

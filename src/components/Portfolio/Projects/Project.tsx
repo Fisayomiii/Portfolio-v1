@@ -30,12 +30,12 @@ function Project() {
     ];
     return (
         <>
-            <div id="home-magicwall" className="fake-magicwall ">
+            {/* <div id="home-magicwall" className="fake-magicwall ">
                 <ul>
                     {project.map((item, index) => (
                         <li key={index}>
                             <div className="magic-wall_item lazyload" id="modal1">
-                                <img src={item.img} alt="image" />
+                                <img src={item.img} alt="portfolio image" />
                                 <div className="colorbox">
                                     <h4>{item.title}</h4>
                                     <p>{item.desc}</p>
@@ -44,6 +44,24 @@ function Project() {
                             </div>
                         </li>
                     ))}
+                </ul>
+            </div> */}
+
+            <div id="home-magicwall" className="fake-magicwall">
+                <ul>
+                    {project.map((item, index) => (
+                        <li key={index}>
+                            <div className="magic-wall_item lazyload" id="modal1">
+                                <img src={item.img} alt="portfolio image" />
+                                <div className="colorbox">
+                                    <h4>{item.title}</h4>
+                                    <p>{item.desc}</p>
+                                    <a href={item.link} target="_blank" rel='noreferrer' className='tag'>Demo</a>
+                                </div>
+                            </div>
+                        </li>
+                    ))}
+
                 </ul>
             </div>
         </>

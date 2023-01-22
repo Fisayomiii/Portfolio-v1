@@ -115,10 +115,45 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 585px) {
     .container .content {
         position: relative;
         max-width: 450px;
+    }
+}
+
+@media (max-width: 453px) {
+    .container .content {
+        position: relative;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 415px) {
+    .container .content {
+        position: relative;
+        max-width: 390px;
+    }
+}
+
+@media (max-width: 388px) {
+    .container .content {
+        position: relative;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 325px) {
+    .container .content {
+        position: relative;
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 277px) {
+    .container .content {
+        position: relative;
+        max-width: 230px;
     }
 }
 

@@ -1,6 +1,7 @@
 import ScrollDrown from "../../Ui/scroll/Scroll"
 import Button from "../../Ui/viewResumeBtn/Button"
 import Typewriter from 'typewriter-effect';
+
 function Intro() {
   return (
     <>

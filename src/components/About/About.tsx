@@ -14,7 +14,7 @@ function About() {
                         <span className="blast" aria-hidden="true" >i</span>
                         <span className="blast" aria-hidden="true" > ?</span>
                     </h2>
-                    <p >
+                    <p>
                         Hello! My name is <span className='portfolio_link'>Fisayomi</span>, a talented <span className='portfolio_link'>Frontend developer</span>. I am very passionate about leveraging my
                         diverse backgrounds to decipher challenging problems and create delightful experiences.
                         <br /><br />
