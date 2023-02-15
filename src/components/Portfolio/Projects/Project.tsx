@@ -1,30 +1,29 @@
 import '../Projects/project.css'
 
 function Project() {
-
     const project = [
         {
             img: "https://i.ibb.co/3WQhSKF/ubivid.jpg",
             title: "Ubivid",
-            desc: "✨ With Ubivid Users can come stream movies to gain information about a specific movie about to be released or even a movie released.",
+            desc: "✨ With Ubivid users can come stream movies to maybe gain desc about a specific movie about to be released or even a movie released.",
             link: "https://ubivid.vercel.app",
         },
         {
             img: "https://i.ibb.co/k8Q6Tw7/tailui.jpg",
             title: "TailUI",
-            desc: "✨ TailUI a collection of Free Tailwind CSS components to bootstrap your new apps, projects or landing sites!",
+            desc: "✨ TailUI a collection of Free Tailwind CSS templates to bootstrap your new projects or landing sites.",
             link: "https://tailui.vercel.app",
         },
         {
             img: "https://i.ibb.co/DbY8VPL/earlybean.jpg",
             title: "EarlyBean",
-            desc: "✨ EarlyBean is a web application that help children save money better.",
+            // desc: "✨ EarlyBean is a web application that help children save money better.",
             link: "https://earlybean.vercel.app",
         },
         {
             img: "https://i.ibb.co/YW3SRjS/gitlook.jpg",
             title: "GitLook",
-            desc: "✨ A nicer look at GitHub profiles built with React.js and the GitHub API",
+            desc: "✨ A nicer look at GitHub profiles built with React.js and the GitHub API.",
             link: "https://gitlook.vercel.app",
         },
     ];

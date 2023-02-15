@@ -1,7 +1,7 @@
 function Skills() {
     const skills = ['TypeScript', 'React', 'Angular', 'HTML', 'CSS', 'Vite'];
 
-    const devtools = ['Bootstrap ', 'Tailwind', 'Github', 'Codepen', 'Terminal', 'Vercel', 'Netlify'];
+    const devtools = ['Bootstrap ', 'Tailwind', 'Github', 'Codepen', 'Terminal', 'Vercel', 'Netlify', 'Midjourney'];
 
     return (
         <>

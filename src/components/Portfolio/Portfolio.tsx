@@ -20,12 +20,9 @@ function Portfolio() {
                         <span className="blast" aria-hidden="true" >i</span>
                         <span className="blast" aria-hidden="true" >o</span>
                     </h2>
-                    <p>I like to Create standard and pixel
-                        perfect Frontend Product with great
-                        User experiences .<br />
+                    <p>
                         A small gallery of recent projects done by me.
-                        I.
-                        interested to see some of the projects pushed to my github repository? Then Visit my
+                        Interested to see some of the projects pushed to my Github repository? Then visit my
                         <a href="https://github.com/Fisayo6969" target="_blank" rel="noreferrer" className='portfolio_link'> GitHub</a> page.<br />
                     </p>
                 </div>
