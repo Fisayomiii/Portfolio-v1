@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://i.ibb.co/9HMjWs4/favico.png" width="100" />
+  <img alt="Logo" src="https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/favico_qpj5yu.png" width="100" />
 </div>
 <h1 align="center">
   oluwafisayomi.dev - v1
