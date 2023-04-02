@@ -1,7 +1,19 @@
-import '../Projects/project.css'
+import '../Projects/project.css';
 
 function Project() {
     const project = [
+        {
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/tailui_rdvkaa.jpg",
+            title: "TailUI",
+            desc: "✨ TailUI a collection of Free Tailwind CSS templates to bootstrap your new projects or landing sites.",
+            link: "https://tailui.vercel.app",
+        },
+        {
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v16264262/samples/Portfolio/gitlook_erof19.jpg",
+            title: "Intellitools",
+            desc: "✨ Intellitools is a database of Ai tools curiculated to help you empower your next project",
+            link: "https://intellitools.vercel.app",
+        },
         {
             img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/ubivid_eyp9up.jpg",
             title: "Ubivid",
@@ -9,10 +21,10 @@ function Project() {
             link: "https://ubivid.vercel.app",
         },
         {
-            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/tailui_rdvkaa.jpg",
-            title: "TailUI",
-            desc: "✨ TailUI a collection of Free Tailwind CSS templates to bootstrap your new projects or landing sites.",
-            link: "https://tailui.vercel.app",
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v16264262/samples/Portfolio/gitlook_erof19.jpg",
+            title: "Template",
+            desc: "✨ A minimal portfolio template for Techies",
+            link: "https://viteportfoliotemplate.vercel.app",
         },
         {
             img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/earlybean_sfyckt.jpg",
@@ -26,26 +38,15 @@ function Project() {
             desc: "✨ A nicer look at GitHub profiles built with React.js and the GitHub API.",
             link: "https://gitlook.vercel.app",
         },
+        {
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/gitlook_erof19.jpg",
+            title: "GitLook",
+            desc: "✨ A nicer look at GitHub profiles built with React.js and the GitHub API.",
+            link: "https://gitlook.vercel.app",
+        },
     ];
     return (
         <>
-            {/* <div id="home-magicwall" className="fake-magicwall ">
-                <ul>
-                    {project.map((item, index) => (
-                        <li key={index}>
-                            <div className="magic-wall_item lazyload" id="modal1">
-                                <img src={item.img} alt="portfolio image" />
-                                <div className="colorbox">
-                                    <h4>{item.title}</h4>
-                                    <p>{item.desc}</p>
-                                    <a href={item.link} target="_blank" rel='noreferrer' className='tag'>Demo</a>
-                                </div>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            </div> */}
-
             <div id="home-magicwall" className="fake-magicwall">
                 <ul>
                     {project.map((item, index) => (
@@ -67,4 +68,4 @@ function Project() {
     )
 }
 
-export default Project
+export default Project;

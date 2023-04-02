@@ -6,7 +6,7 @@ function Social() {
             <div className="hOvuuP">
                 <ul className='dVLQAC'>
                     <li className='github'>
-                        <a href="https://github.com/fisayomiii" aria-label="GitHub" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/Fisayomiii" aria-label="GitHub" target="_blank" rel="noreferrer">
                             <i className='bx bxl-github' ></i>
                         </a>
                     </li>

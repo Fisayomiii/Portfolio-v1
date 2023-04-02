@@ -1,8 +1,10 @@
 .cover {
     display: flex;
+    flex-direction: column;
     gap: 1.6rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
     min-height: 70vh;
 }
 
@@ -10,6 +12,7 @@
     color: var(--title-color);
     font-size: var(--biggest-font-size);
 }
+
 .infoandcalltoaction {
     margin-top: -0.4em;
     line-height: 2em;
@@ -20,11 +23,59 @@
     color: var(--container-pink);
 }
 
-.infoandcalltoaction p a {
-    color: var(--title-color);
+.nfound-button {
     text-decoration: none;
+    height: 35px;
+    display: block;
+    line-height: 35px;
+    letter-spacing: 3px;
+    position: relative;
+    text-align: center;
+    color: var(--container-lime);
+    margin-top: 10px;
 }
 
-.infoandcalltoaction p a:hover {
-    text-decoration: underline;
+.nfound-button div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.nfound-button span.bg {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: -5px;
+    top: 0;
+    transition: all .3s ease-in-out;
+    background-color: var(--container-lime);
+    transform: skewX(-19deg);
+}
+
+.nfound-button:hover span.bg {
+    width: 110%;
+}
+
+.nfound-button span.base {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border: 1px solid var(--container-lime);
+    box-sizing: border-box;
+}
+
+.nfound-button span.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: var(--container-lime);
+}
+
+.nfound-button:hover span.text {
+    color: var(--body-color);
 }

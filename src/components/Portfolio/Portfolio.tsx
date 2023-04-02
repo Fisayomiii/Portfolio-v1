@@ -1,4 +1,4 @@
-import Project from "./Projects/Project"
+import Project from "./Projects/Project";
 
 function Portfolio() {
     return (
@@ -22,14 +22,14 @@ function Portfolio() {
                     </h2>
                     <p>
                         A small gallery of recent projects done by me.
-                        Interested to see some of the projects pushed to my Github repository? Then visit my
-                        <a href="https://github.com/Fisayo6969" target="_blank" rel="noreferrer" className='portfolio_link'> GitHub</a> page.<br />
+                        Interested to see all of the projects pushed to my Github repository? Then visit my
+                        <a href="https://github.com/Fisayomiii" target="_blank" rel="noreferrer" className='portfolio_link'> GitHub</a> page.<br />
                     </p>
                 </div>
             </div><br />
             <Project/>
         </>
     )
-}
+};
 
-export default Portfolio
+export default Portfolio;
