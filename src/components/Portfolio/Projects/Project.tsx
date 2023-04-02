@@ -9,7 +9,7 @@ function Project() {
             link: "https://tailui.vercel.app",
         },
         {
-            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v16264262/samples/Portfolio/gitlook_erof19.jpg",
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1680448878/IntelliTools/banner_bcg2pu.png",
             title: "Intellitools",
             desc: "✨ Intellitools is a database of Ai tools curiculated to help you empower your next project",
             link: "https://intellitools.vercel.app",
@@ -21,7 +21,7 @@ function Project() {
             link: "https://ubivid.vercel.app",
         },
         {
-            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v16264262/samples/Portfolio/gitlook_erof19.jpg",
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1680449035/samples/Portfolio/Screenshot_163_rbglgq.png",
             title: "Template",
             desc: "✨ A minimal portfolio template for Techies",
             link: "https://viteportfoliotemplate.vercel.app",
@@ -37,13 +37,7 @@ function Project() {
             title: "GitLook",
             desc: "✨ A nicer look at GitHub profiles built with React.js and the GitHub API.",
             link: "https://gitlook.vercel.app",
-        },
-        {
-            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/gitlook_erof19.jpg",
-            title: "GitLook",
-            desc: "✨ A nicer look at GitHub profiles built with React.js and the GitHub API.",
-            link: "https://gitlook.vercel.app",
-        },
+        }
     ];
     return (
         <>
