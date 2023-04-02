@@ -13,7 +13,7 @@
   </a>
 </p>
 
-![demo](https://i.ibb.co/7kTnkQZ/Screenshot-143.png)
+![demo](https://res.cloudinary.com/fisayomithesedays/image/upload/v1680450099/samples/Portfolio/Screenshot_164_dunscx.png)
 
 
 
