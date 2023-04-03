@@ -16,7 +16,7 @@ const Animation = () => {
           <span className="progressbar progresslime" id="progress-css"></span>
         </li>
 
-        <label>React js</label>
+        <label>Javascript</label>
         <span className="percent" id="javascript-pourcent"></span>
         <li>
           <span className="progressbar progresspink" id="progress-javascript"></span>

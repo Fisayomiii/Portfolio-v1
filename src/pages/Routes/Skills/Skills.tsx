@@ -1,15 +1,31 @@
 import Footer from "../../../components/Footer/Footer";
 import Sidebar from "../../../components/Sidebar/Sidebar";
 import Animation from "../../../Ui/skills-Animation/Animation";
+import { motion, Variants } from "framer-motion";
 
 function Skills() {
+  const cardVariants: Variants = {
+    offscreen: {
+        y: 300
+    },
+    onscreen: {
+        y: 60,
+        transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.8
+        }
+    }
+};
   return (
     <>
       <div className="app">
         <Sidebar />
         <main className="main"><br /><br /><br /><br /><br /><br />
-          <div className="container">
-            <div className="content">
+          <motion.div className="container" initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}>
+            <motion.div className="content" variants={cardVariants}>
               <h2 aria-label="About me" className="blast-root">
                 <span className="blast" aria-hidden="true" >W</span>
                 <span className="blast" aria-hidden="true" >h</span>
@@ -31,8 +47,8 @@ function Skills() {
                 I use various Frontend technologies to design and develop attractive websites which converts visitors to customers. I develop creative and responsive Frontend layouts. I like to code things from scratch, and enjoy bringing ideas to life in the browser.
               </p><br /><br />
               <Animation />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
           <Footer/>
 
         </main>
