@@ -1,8 +1,26 @@
+import { motion, Variants } from "framer-motion";
+
+
 function About() {
+    const cardVariants: Variants = {
+        offscreen: {
+            y: 300
+        },
+        onscreen: {
+            y: 60,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8
+            }
+        }
+    };
     return (
         <>
-            <div className="container">
-                <div className="content">
+            <motion.div className="container" initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}>
+                <motion.div className="content" variants={cardVariants}>
                     <div className="fake-big-1">About Me</div>
                     <h2 aria-label="About me" className="blast-root">
                         <span className="blast" aria-hidden="true" >W</span>
@@ -22,8 +40,8 @@ function About() {
                         When I'm not coding or exploring the creative possibilities of AI, you can find me doing positive things either biking or movies. If you're looking for a Frontend developer who is passionate, curious, and dedicated to their craft, then look no further. I would love to work with you to create something beautiful and impactful. I always work towards achieving the best results on each project I lay my hands on. I am Interested in the development spectrum and actively looking for an opportunity in the field of Software Engineering.
                         <br /><br />
                     </p>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </>
     )
 }
