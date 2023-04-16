@@ -36,7 +36,7 @@ function Social() {
                         </a>
                     </motion.li>
                     <motion.li variants={variant3} initial="hidden" animate="visible" className='linkedin'>
-                        <a href="https://www.linkedin.com/in/oluwafisayomi-agboola-232226230/" aria-label="Linkedin" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/fisayomiii" aria-label="Linkedin" target="_blank" rel="noreferrer">
                             <i className='bx bxl-linkedin'></i>
                         </a>
                     </motion.li>
