@@ -1,6 +1,22 @@
 import '../Projects/project.css';
+import { motion, Variants } from "framer-motion";
 
 function Project() {
+
+
+    const cardVariants: Variants = {
+        offscreen: { scale: 0.9, opacity: 0 },
+        onscreen: {
+            scale: 1, opacity: 1,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8,
+                delay:1.2
+            }
+        }
+    };
+
     const project = [
         {
             img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/tailui_rdvkaa.jpg",
@@ -44,7 +60,9 @@ function Project() {
             <div id="home-magicwall" className="fake-magicwall">
                 <ul>
                     {project.map((item, index) => (
-                        <li key={index}>
+                        <motion.li initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.8 }} variants={cardVariants} key={index}>
                             <div className="magic-wall_item lazyload" id="modal1">
                                 <img src={item.img} alt="portfolio image" />
                                 <div className="colorbox">
@@ -53,7 +71,7 @@ function Project() {
                                     <a href={item.link} target="_blank" rel='noreferrer' className='tag'>Demo</a>
                                 </div>
                             </div>
-                        </li>
+                        </motion.li>
                     ))}
 
                 </ul>

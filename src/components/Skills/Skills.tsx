@@ -5,11 +5,9 @@ function Skills() {
     const devtools = ['Github', 'GPT 4', 'Intellitools', 'Chrome', 'VS Code', 'Vercel', 'Netlify', 'Midjourney'];
 
     const cardVariants: Variants = {
-        offscreen: {
-            y: 300
-        },
+        offscreen: { scale: 0.9, opacity: 0 },
         onscreen: {
-            y: 60,
+            scale: 1, opacity: 1,
             transition: {
                 type: "spring",
                 bounce: 0.4,
@@ -18,9 +16,22 @@ function Skills() {
         }
     };
 
+    const cardVariants2: Variants = {
+        offscreen: { scale: 0.9, opacity: 0 },
+        onscreen: {
+            scale: 1, opacity: 1,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8,
+                delay:.8
+            }
+        }
+    };
+
     const mvariant1 = {
         offscreen: { scale: 0.9, opacity: 0 },
-        onscreen: { scale: 1, opacity: 1, transition: { delay: 1 } }
+        onscreen: { scale: 1, opacity: 1, transition: { delay: 1.1 } }
     };
 
     return (
@@ -46,7 +57,9 @@ function Skills() {
                         <span className="blast" aria-hidden="true" >?</span>
                     </h2>
                     <div className="fake-big-1">Skills</div>
-                    <motion.p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">I like to craft solid and scalable frontend products with dope user experiences ⚡.<br /> With the skills I posses,
+                    <motion.p initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }} variants={cardVariants2} data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">I like to craft solid and scalable frontend products with dope user experiences ⚡.<br /> With the skills I posses,
                         I use various Frontend technologies to design and develop attractive websites which converts visitors to customers. I develop creative and responsive Frontend layouts. I like to code things from scratch, and enjoy bringing ideas to life in the browser.
                     </motion.p><br />
                     <motion.p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Here are a few technologies I work with:

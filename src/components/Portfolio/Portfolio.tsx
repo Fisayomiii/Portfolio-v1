@@ -2,16 +2,28 @@ import Project from "./Projects/Project";
 import { motion, Variants } from "framer-motion";
 
 function Portfolio() {
+
     const cardVariants: Variants = {
-        offscreen: {
-            y: 300
-        },
+        offscreen: { scale: 0.9, opacity: 0 },
         onscreen: {
-            y: 60,
+            scale: 1, opacity: 1,
             transition: {
                 type: "spring",
                 bounce: 0.4,
                 duration: 0.8
+            }
+        }
+    };
+
+    const cardVariants2: Variants = {
+        offscreen: { scale: 0.9, opacity: 0 },
+        onscreen: {
+            scale: 1, opacity: 1,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8,
+                delay:.7
             }
         }
     };
@@ -39,11 +51,11 @@ function Portfolio() {
                                 <span className="blast" aria-hidden="true" >i</span>
                                 <span className="blast" aria-hidden="true" >o</span>
                             </h2>
-                            <p>
+                            <motion.p variants={cardVariants2}>
                                 A small gallery of recent projects done by me.
                                 Interested to see all of the projects pushed to my Github repository? Then visit my
                                 <a href="https://github.com/Fisayomiii" target="_blank" rel="noreferrer" className='portfolio_link'> GitHub</a> page.<br />
-                            </p>
+                            </motion.p>
                         </motion.div>
                     </motion.div><br />
                     <Project />

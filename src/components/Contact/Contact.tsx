@@ -1,39 +1,36 @@
-// import { motion, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 function Contact() {
-//     const contactVariants: Variants = {
-//         offscreen: {
-//             y: 300
-//         },
-//         onscreen: {
-//             y: 60,
-//             transition: {
-//                 type: "spring",
-//                 bounce: 0.4,
-//                 duration: 0.8
-//             }
-//         }
-//     };
+    const contactVariants: Variants = {
+        offscreen: { scale: 0.9, opacity: 0 },
+        onscreen: {
+            scale: 1, opacity: 1,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8
+            }
+        }
+    };
 
-//     const mapVariants: Variants = {
-//         offscreen: {
-//             y: 300
-//         },
-//         onscreen: {
-//             y: 60,
-//             transition: {
-//                 type: "spring",
-//                 bounce: 0.4,
-//                 duration: 0.8,
-//                 delay: .1
-//             }
-//         }
-//     };
+    const mapVariants: Variants = {
+        offscreen: { scale: 0.9, opacity: 0 },
+        onscreen: {
+            scale: 1, opacity: 1,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8
+            }
+        }
+    };
     return (
         <>
-            <div className="container">
-                <div className="content contact-section">
-                    <form className="contact-form">
+            <motion.div className="container">
+                <motion.div className="content contact-section">
+                    <motion.form initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.8 }} variants={contactVariants} className="contact-form">
                         <div className="contact-heading">
                             <div id="header">
                                 <div className="fake-big-1">@@</div>
@@ -98,18 +95,20 @@ function Contact() {
                                     </span>
                                 </div>
                             </button> */}
-                    </form>
+                    </motion.form>
 
-                    <div className="google-map">
+                    <motion.div initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.8 }} variants={mapVariants} className="google-map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.45932733844!2d3.1438722012219147!3d6.548376808966097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1672598599388!5m2!1sen!2sng"
                             style={{ border: 0 }}
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
-                    </div>
-                </div>
-            </div>
+                    </motion.div>
+                </motion.div>
+            </motion.div>
         </>
     )
 }

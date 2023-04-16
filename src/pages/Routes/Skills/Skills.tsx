@@ -5,26 +5,24 @@ import { motion, Variants } from "framer-motion";
 
 function Skills() {
   const cardVariants: Variants = {
-    offscreen: {
-        y: 300
-    },
+    offscreen: { scale: 0.9, opacity: 0 },
     onscreen: {
-        y: 60,
-        transition: {
-            type: "spring",
-            bounce: 0.4,
-            duration: 0.8
-        }
+      scale: 1, opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8
+      }
     }
-};
+  };
   return (
     <>
       <div className="app">
         <Sidebar />
         <main className="main"><br /><br /><br /><br /><br /><br />
           <motion.div className="container" initial="offscreen"
-                whileInView="onscreen"
-                viewport={{ once: true, amount: 0.8 }}>
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}>
             <motion.div className="content" variants={cardVariants}>
               <h2 aria-label="About me" className="blast-root">
                 <span className="blast" aria-hidden="true" >W</span>
@@ -49,7 +47,7 @@ function Skills() {
               <Animation />
             </motion.div>
           </motion.div>
-          <Footer/>
+          <Footer />
 
         </main>
       </div>

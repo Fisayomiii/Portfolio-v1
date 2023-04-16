@@ -41,8 +41,8 @@ function Social() {
                         </a>
                     </motion.li>
                     <motion.li variants={variant4} initial="hidden" animate="visible" className='figma'>
-                        <a href="https://www.figma.com/@Fisayomi" aria-label="Figma" target="_blank" rel="noreferrer">
-                            <i className='bx bxl-figma'></i>
+                        <a href="https://dev.to/fisayomi" aria-label="Dev.to" target="_blank" rel="noreferrer">
+                            <i className='bx bxl-dev-to'></i>
                         </a>
                     </motion.li>
                 </ul>
