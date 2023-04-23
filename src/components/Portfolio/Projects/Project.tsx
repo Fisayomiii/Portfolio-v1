@@ -1,21 +1,21 @@
 import '../Projects/project.css';
-import { motion, Variants } from "framer-motion";
+// import { motion, Variants } from "framer-motion";
 
 function Project() {
 
 
-    const cardVariants: Variants = {
-        offscreen: { scale: 0.9, opacity: 0 },
-        onscreen: {
-            scale: 1, opacity: 1,
-            transition: {
-                type: "spring",
-                bounce: 0.4,
-                duration: 0.8,
-                delay:1.2
-            }
-        }
-    };
+    // const cardVariants: Variants = {
+    //     offscreen: { scale: 0.9, opacity: 0 },
+    //     onscreen: {
+    //         scale: 1, opacity: 1,
+    //         transition: {
+    //             type: "spring",
+    //             bounce: 0.4,
+    //             duration: 0.8,
+    //             delay:1.2
+    //         }
+    //     }
+    // };
 
     const project = [
         {
@@ -25,7 +25,7 @@ function Project() {
             link: "https://tailui.vercel.app",
         },
         {
-            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1680448878/IntelliTools/banner_bcg2pu.png",
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1682283719/samples/Portfolio/intellitools_zpjsp9.jpg",
             title: "Intellitools",
             desc: "✨ Intellitools is a database of Ai tools curiculated to help you empower your next project",
             link: "https://intellitools.vercel.app",
@@ -43,10 +43,10 @@ function Project() {
             link: "https://viteportfoliotemplate.vercel.app",
         },
         {
-            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/earlybean_sfyckt.jpg",
-            title: "EarlyBean",
-            // desc: "✨ EarlyBean is a web application that help children save money better.",
-            link: "https://earlybean.vercel.app",
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1682283718/samples/Portfolio/Travelwise_atk3n0.jpg",
+            title: "Travelwise",
+            desc: "✨ Landing page ddesigned for a touring website.",
+            link: "https://travelwiise.vercel.app",
         },
         {
             img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/gitlook_erof19.jpg",
@@ -60,9 +60,7 @@ function Project() {
             <div id="home-magicwall" className="fake-magicwall">
                 <ul>
                     {project.map((item, index) => (
-                        <motion.li initial="offscreen"
-                        whileInView="onscreen"
-                        viewport={{ once: true, amount: 0.8 }} variants={cardVariants} key={index}>
+                        <li key={index}>
                             <div className="magic-wall_item lazyload" id="modal1">
                                 <img src={item.img} alt="portfolio image" />
                                 <div className="colorbox">
@@ -71,7 +69,7 @@ function Project() {
                                     <a href={item.link} target="_blank" rel='noreferrer' className='tag'>Demo</a>
                                 </div>
                             </div>
-                        </motion.li>
+                        </li>
                     ))}
 
                 </ul>
