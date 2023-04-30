@@ -148,7 +148,11 @@ body {
     width: 100%;
     display: flex;
     transition: 0.5s;
-    margin-bottom: 10em;
+    margin-bottom: 7em;
+}
+
+.bcgsap {
+    margin-top: 30em;
 }
 
 .container .content {

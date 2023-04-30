@@ -12,9 +12,12 @@
     "@headlessui/react": "^1.7.5",
     "dotenv": "^16.0.3",
     "framer-motion": "^7.6.17",
+    "gsap": "^3.11.5",
+    "kursor": "^0.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.4",
+    "react-use": "^17.4.0",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
