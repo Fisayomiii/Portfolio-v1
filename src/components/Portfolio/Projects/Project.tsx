@@ -19,39 +19,46 @@ function Project() {
 
     const project = [
         {
-            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/tailui_rdvkaa.jpg",
-            title: "TailUI",
-            desc: "✨ TailUI a collection of Free Tailwind CSS templates to bootstrap your new projects or landing sites.",
-            link: "https://tailui.vercel.app",
-        },
-        {
             img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1682283719/samples/Portfolio/intellitools_zpjsp9.jpg",
             title: "Intellitools",
-            desc: "✨ Intellitools is a database of Ai tools curiculated to help you empower your next project",
+            desc: " Intellitools is a database of Ai tools curiculated to help you empower your next project",
             link: "https://intellitools.vercel.app",
         },
         {
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1683127938/samples/Portfolio/Clevertalk_jvwlgh.jpg",
+            title: "Clevertalk",
+            desc: " Clevertalk is a chatbot built with OpenAI's API, allowing users to engage in conversations & get useful responses.",
+            link: "https://clevertalk.netlify.app",
+        },
+        {
+            img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/tailui_rdvkaa.jpg",
+            title: "TailUI",
+            desc: " TailUI a collection of Free Tailwind CSS templates to bootstrap your new projects or landing sites.",
+            link: "https://tailui.vercel.app",
+        },
+        
+        {
             img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/ubivid_eyp9up.jpg",
             title: "Ubivid",
-            desc: "✨ With Ubivid users can come stream movies to maybe gain desc about a specific movie about to be released or even a movie released.",
+            desc: " With Ubivid users can come stream movies to maybe gain desc about a specific movie about to be released or even a movie released.",
             link: "https://ubivid.vercel.app",
         },
         {
             img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1680449035/samples/Portfolio/Screenshot_163_rbglgq.png",
             title: "Template",
-            desc: "✨ A minimal portfolio template for Techies",
+            desc: " A minimal portfolio template for Techies",
             link: "https://viteportfoliotemplate.vercel.app",
         },
         {
             img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1682283718/samples/Portfolio/Travelwise_atk3n0.jpg",
             title: "Travelwise",
-            desc: "✨ Landing page ddesigned for a touring website.",
+            desc: " Landing page ddesigned for a touring website.",
             link: "https://travelwiise.vercel.app",
         },
         {
             img: "https://res.cloudinary.com/fisayomithesedays/image/upload/v1675264262/samples/Portfolio/gitlook_erof19.jpg",
             title: "GitLook",
-            desc: "✨ A nicer look at GitHub profiles built with React.js and the GitHub API.",
+            desc: " A nicer look at GitHub profiles built with React.js and the GitHub API.",
             link: "https://gitlook.vercel.app",
         }
     ];

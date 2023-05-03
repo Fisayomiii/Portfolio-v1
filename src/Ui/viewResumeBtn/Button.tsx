@@ -1,10 +1,11 @@
 import 'react';
 import '../viewResumeBtn/button.css';
+import resume from '../../assets/Resume/FisayoAgboolaResume.pdf';
 
 const Button = () => {
     return (
         <>
-            <a href="/" download="" className="contact-button">
+            <a href={resume} target="_blank" rel="noopener noreferrer" className="contact-button">
                 <div>
                     <span className="bg"></span>
                     <span className="base"></span>
