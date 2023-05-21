@@ -38,7 +38,7 @@ function Skills() {
         <>
             <div className="container" >
                 <div className="content" >
-                    <h2 aria-label="About me" className="blast-root">
+                    <motion.h2 aria-label="About me" className="blast-root">
                         <span className="blast" aria-hidden="true" >W</span>
                         <span className="blast" aria-hidden="true" >h</span>
                         <span className="blast" aria-hidden="true" >a</span>
@@ -53,7 +53,7 @@ function Skills() {
                         <span className="blast" aria-hidden="true" >d</span>
                         <span className="blast" aria-hidden="true" >o</span>
                         <span className="blast" aria-hidden="true" >?</span>
-                    </h2>
+                    </motion.h2>
                     <div className="fake-big-1">Skills</div>
                     <p>I like to craft solid and scalable frontend products with dope user experiences ⚡.<br /> With the skills I posses,
                         I use various Frontend technologies to design and develop attractive websites which converts visitors to customers. I develop creative and responsive Frontend layouts. I like to code things from scratch, and enjoy bringing ideas to life in the browser.
