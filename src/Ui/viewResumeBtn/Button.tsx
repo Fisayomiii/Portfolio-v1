@@ -1,6 +1,6 @@
 import 'react';
 import '../viewResumeBtn/button.css';
-import resume from '../../assets/Resume/FisayoAgboola.pdf';
+import resume from '../../assets/Resume/Fisayoagboola.pdf';
 
 const Button = () => {
     return (
