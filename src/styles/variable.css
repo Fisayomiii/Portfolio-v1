@@ -46,6 +46,10 @@
     /* border: 1px solid var(--color-testing); */
 }
 
+html , body{
+   scroll-behavior: smooth;
+}
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
     width: 5px;

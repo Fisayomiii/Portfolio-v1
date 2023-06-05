@@ -33,12 +33,12 @@ function Intro() {
             <strong className='oshawdow'>
               O
             </strong>
-            <a href="https://twitter.com/999tweets_her" target="_blank" rel='noreferrer'>luwafisayomi,</a>
+            <a href="http://twitter.com/999tweets_her" target="_blank" rel='noreferrer'>luwafisayomi,</a>
           </b>
           </motion.p>
 
           <motion.div initial="hidden" animate="visible" variants={variant3}>
-            <Typewriter options={{ strings: ['Frontend Developer.', 'Teenager.', 'Ai Enthusiast.'], autoStart: true, loop: true, }} />
+            <Typewriter options={{ strings: ['Frontend Developer.', 'Prompt Explorer.', 'Teenager' , 'I write too..'], autoStart: true, loop: true, }} />
           </motion.div>
         </h1><br />
 

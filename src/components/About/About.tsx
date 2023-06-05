@@ -1,67 +1,65 @@
-import { useIntersection } from "react-use";
-import gsap from "gsap";
-import { useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 function About() {
 
-  // Ref for our element
-  const sectionRef = useRef(null);
-  // All the ref to be observed
-  const intersection = useIntersection(sectionRef, {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
   });
 
-  // Animation for fading in
-  const fadeIn = (element: gsap.TweenTarget) => {
-    gsap.to(element, 1, {
-      opacity: 1,
-      y: -10,
-      ease: "power4.out",
-      stagger: {
-        amount: 0.3
-      }
-    });
-  };
-  // Animation for fading out
-  const fadeOut = (element: gsap.TweenTarget) => {
-    gsap.to(element, 1, {
-      opacity: 0,
-      y: -20,
-      ease: "power4.out",
-    });
-  };
+  const scrollrevealanimation = useAnimation();
 
-  // checking to see when the vieport is visible to the user
-  intersection && intersection.intersectionRatio < 0.5 ? fadeOut(".fadeIn") : fadeIn(".fadeIn");
+  useEffect(() => {
+    if (inView) {
+      scrollrevealanimation.start({
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    } else {
+      scrollrevealanimation.start({
+        opacity: 0,
+        y: "100px",
+      });
+    }
+
+    // console.log(inView);
+  }, [inView]);
 
   return (
-    <><br /><br />
-      <div className="container " >
-        <div className="content" >
+    <><br />
+      <div className="container" >
+        <div className="content">
           <div className="fake-big-1 ">About Me</div>
-          <h2 aria-label="About me" className="blast-root fadeIn">
-            <span className="blast" aria-hidden="true" >W</span>
-            <span className="blast" aria-hidden="true" >h</span>
-            <span className="blast" aria-hidden="true" >o</span>
-            <span className="blast" aria-hidden="true" style={{ opacity: 0 }} >.</span><span className="blast" aria-hidden="true" >a</span>
-            <span className="blast" aria-hidden="true" >m</span>
-            <span className="blast" aria-hidden="true" style={{ opacity: 0 }}>.</span>
-            <span className="blast" aria-hidden="true" >i</span>
-            <span className="blast" aria-hidden="true" > ?</span>
-          </h2>
-          <p className="fadeIn">
-            Hello! My name is <span className='portfolio_link'>Fisayomi</span>, and I am a <span className='portfolio_link'>Frontend developer</span> based in the vibrant city of Lagos, Nigeria. I have a passion for creating beautiful, intuitive, and user-friendly interfaces that not only look great but also provide an exceptional user experience. As a developer, I always strive to stay up-to-date with the latest technologies and trends in the industry to provide my clients with cutting-edge solutions that meet their needs.
-          </p>
+          <motion.div ref={ref} animate={scrollrevealanimation}>
+            <h2 aria-label="About me" className="blast-root fadeIn" >
+              <span className="blast" aria-hidden="true" >W</span>
+              <span className="blast" aria-hidden="true" >h</span>
+              <span className="blast" aria-hidden="true" >o</span>
+              <span className="blast" aria-hidden="true" style={{ opacity: 0 }} >.</span><span className="blast" aria-hidden="true" >a</span>
+              <span className="blast" aria-hidden="true" >m</span>
+              <span className="blast" aria-hidden="true" style={{ opacity: 0 }}>.</span>
+              <span className="blast" aria-hidden="true" >i</span>
+              <span className="blast" aria-hidden="true" > ?</span>
+            </h2>
+            <motion.p >
+              Hello! I'm <span className='portfolio_link'>Fisayomi </span>, a <span className='portfolio_link'>Frontend developer</span> based in Lagos, Nigeria. My passion lies in creating user-friendly interfaces that enhance the overall user experience. I am driven by the desire to work collaboratively with like-minded developers and designers who share my vision for creating seamless and intuitive digital experiences.
+            </motion.p>
 
-          <br /><br />
-          <p className="fadeIn">In addition to my frontend development skills, I also have a keen interest in design and generative art. While I'm not a full-fledged generative AI artist, I love exploring the intersection of art and technology and experimenting with the creative possibilities that AI provides. I'm fascinated by the way AI can generate new and unexpected visual patterns, and I believe that this technology has the potential to revolutionize the way we think about art and creativity.</p>
+            <br />
+            <p className="fadeIn">Having honed my skills in frontend development, I am constantly seeking opportunities to learn and grow from talented individuals who can broaden my knowledge and expertise. Working in a team environment allows me to gain insights from different perspectives, fostering creativity and innovation.</p>
 
-          <br /><br />
-          <p className="fadeIn">
-            When I'm not coding or exploring the creative possibilities of AI, you can find me doing positive things either biking or movies. If you're looking for a Frontend developer who is passionate, curious, and dedicated to their craft, then look no further. I would love to work with you to create something beautiful and impactful. I always work towards achieving the best results on each project I lay my hands on. I am Interested in the development spectrum and actively looking for an opportunity in the field of Software Engineering.
-          </p>
+            <br />
+            <p className="fadeIn">
+              In addition to my development work, I enjoy sharing my thoughts and experiences with the tech community. You can find me writing on <a href="http://dev.to/fisayomi" className='portfolio_link' target="_blank" rel="noopener noreferrer">Dev.to </a>, I  mainly write about the problems I encounter when coding and how i was able to fix them ✨
+            </p>
+          </motion.div>
 
           <br /><br />
         </div>
