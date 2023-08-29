@@ -33,13 +33,13 @@ body {
 .sidebar ul li .navitem {
     color: var(--title-color);
     display: inline-block;
-    margin: 20px 0 0;
+    margin: 15px 0 0;
     text-decoration: none;
     transition: 0.3s all;
 }
 
 .sidebar ul li .navitem {
-    font-size: var(--h1-font-size);
+    font-size: var(--h3-font-size);
     display: flex;
     align-items: center;
 }
