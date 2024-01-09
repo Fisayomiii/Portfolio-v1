@@ -38,7 +38,7 @@ function Intro() {
           </motion.p>
 
           <motion.div initial="hidden" animate="visible" variants={variant3}>
-            <Typewriter options={{ strings: ['Frontend Developer.', 'Prompt Explorer.', 'Teenager' , 'I write too..'], autoStart: true, loop: true, }} />
+            <Typewriter options={{ strings: ['Frontend Developer.', 'Video Editor', 'Teenager'], autoStart: true, loop: true, }} />
           </motion.div>
         </h1><br />
 

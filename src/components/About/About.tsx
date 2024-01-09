@@ -49,7 +49,7 @@ function About() {
               <span className="blast" aria-hidden="true" > ?</span>
             </h2>
             <motion.p >
-              Hello! I'm <span className='portfolio_link'>Fisayomi </span>, a <span className='portfolio_link'>Frontend developer</span> based in Lagos, Nigeria. My passion lies in creating user-friendly interfaces that enhance the overall user experience. I am driven by the desire to work collaboratively with like-minded developers and designers who share my vision for creating seamless and intuitive digital experiences.
+              Hello! I'm <span className='portfolio_link'>Fisayomi </span>, a <span className='portfolio_link'>Frontend developer</span> based in Lagos, Nigeria. My passion lies in designing user-friendly interfaces that enhance the overall user experience. I am driven by the desire to work collaboratively with like-minded developers and designers who share my vision for creating seamless digital experiences.
             </motion.p>
 
             <br />
@@ -57,7 +57,7 @@ function About() {
 
             <br />
             <p className="fadeIn">
-              In addition to my development work, I enjoy sharing my thoughts and experiences with the tech community. You can find me writing on <a href="http://dev.to/fisayomi" className='portfolio_link' target="_blank" rel="noopener noreferrer">Dev.to </a>, I  mainly write about the problems I encounter when coding and how i was able to fix them ✨
+            In addition to my development work, I am a <span className='portfolio_link'>Video editor</span> and a <span className='portfolio_link'>Digital Marketer</span>. I am passionate about creating visually compelling content that not only captures attention but also delivers a meaningful message. My video editing skills allow me to bring ideas to life, weaving together visuals and sound to tell stories that resonate with audiences.✨
             </p>
           </motion.div>
 
